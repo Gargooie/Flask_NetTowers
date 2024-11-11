@@ -54,4 +54,4 @@ class TestRegistration(unittest.TestCase):
             "name": "John Doe"
         })
         self.assertEqual(response.status_code, 400)
-        self.assertIn(b'Phone number should be 10 digits', response.data)
+        self.assertIn(b'its lower than 7 and 10', response.data)
